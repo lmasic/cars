@@ -17,6 +17,11 @@ public class Cars {
     public static void main(String[] args) {
         // TODO code application logic here
     
+    TimeSpan t1 = new TimeSpan();
+    TimeSpan t2 = new TimeSpan();
+    
+    t1.equals(t2);
+    System.out.println(t2.getClass());
     
     
     }

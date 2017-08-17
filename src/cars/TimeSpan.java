@@ -31,6 +31,11 @@ public class TimeSpan {
         this.hour = ts.getHour();
     }
 
+    public int hashCode() {
+
+        return getTotalSeconds();
+    }
+
     public void setTime(int hour, int minute, int second) {
         if (second >= 60 || second < 0) {
             this.second = 0;
@@ -100,9 +105,10 @@ public class TimeSpan {
         if (obj == null) {
             return false;
         }
-        if (getClass() != obj.getClass()) {
+        if (this.getClass() != obj.getClass()) {
             return false;
         }
+
         final TimeSpan other = (TimeSpan) obj;
         if (this.getTotalSeconds() != other.getTotalSeconds()) {
             return false;

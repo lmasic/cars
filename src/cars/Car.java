@@ -50,4 +50,9 @@ public class Car {
             super.finalize();
         }
     }
+
+    public int getSpeed() {
+
+        return speed;
+    }
 }
