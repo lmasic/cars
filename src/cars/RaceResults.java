@@ -11,7 +11,7 @@ import java.util.Objects;
  *
  * @author virtuoso
  */
-public class RaceResults {
+public class RaceResults implements Comparable{
 
     private Car car;
     private TimeSpan timeSpan;
