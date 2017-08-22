@@ -21,6 +21,7 @@ public class Cars {
     TimeSpan t2 = new TimeSpan();
     
     t1.equals(t2);
+    
     System.out.println(t2.getClass());
     
     
