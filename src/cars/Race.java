@@ -6,6 +6,7 @@
 package cars;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  *
@@ -47,6 +48,7 @@ public class Race {
             );
         }
         //results.sort(timeSpan);
+        Collections.sort(results);
 
     }
     
